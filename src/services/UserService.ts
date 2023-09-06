@@ -29,7 +29,7 @@ export class UserService {
   };
 
   deleteUser = (name: string) => {
-    // Filtra o array para remover o usuário com o nome especificado
+    
     this.db = this.db.filter((user) => user.name !== name);
   
     if (this.db.length < this.db.length + 1) {
